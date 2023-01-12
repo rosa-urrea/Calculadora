@@ -1,3 +1,12 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Box model */
+    font-size: 1.6rem; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/** GLOBALES **/
 * {
     font-family: 'Fraunces', serif;
     color: #fff;
@@ -8,6 +17,25 @@ body {
     background-color: #250a36;
 }
 
+/** HEADER **/
+header {
+    background-color: #ff00aa;
+    padding: 0.5rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.bold {
+    font-size: 1.8rem;
+    color: #363636;
+    font-weight: 700;
+}
+
+/** CONTENEDOR **/
 .container {
     display: flex;
     justify-content: center;
@@ -15,6 +43,7 @@ body {
     height: 100vh;
 }
 
+/** CALCULADORA **/
 .calculadora {
     display: grid;
     grid-template-columns: repeat(4, 75px);
